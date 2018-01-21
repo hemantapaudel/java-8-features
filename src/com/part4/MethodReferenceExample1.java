@@ -6,13 +6,15 @@ public class MethodReferenceExample1 {
 	
 		
 		Thread thread1 = new Thread(()->System.out.println("Hello"+ Thread.currentThread().getName()));
-		Thread thread2= new Thread(()->System.out.println("Hello"+ Thread.currentThread().getName()));
-		Thread thread3 = new Thread(()->System.out.println("Hello"+ Thread.currentThread().getName()));
 			
 		
+		Thread thread4 = new Thread(()->printMessage());
+		Thread thread5 = new Thread(MethodReferenceExample1::printMessage);
+		
+		
 		thread1.start();
-		thread2.start();
-		thread3.start();
+		thread4.start();
+		thread5.start();
 		
 	}
 	
