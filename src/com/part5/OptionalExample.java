@@ -13,23 +13,38 @@ public class OptionalExample {
 	    Optional<String> name  = Optional.of("baeldung");
 	    System.out.println(name.get());
 	    
-	    Optional<String> opt = Optional.ofNullable(null);
-	    System.out.println(opt.get());
+//	    Optional<String> opt = Optional.ofNullable(null);
+//	    System.out.println(opt.get());
 	    
-		
-	    String value = "";
+	    // Condition check 
+		// using null check
+	    String value = "baeldung";
 	    if(value != null){
 	        System.out.println(value.length());
 	    }
 	    
-	    name.ifPresent( value ->);
+	    //using Optional
+	    Optional<String> valueOptional  = Optional.of("baeldung");
+	    valueOptional.ifPresent(valueOpt -> System.out.println(valueOpt.length()));
 	    
 	    
-	   
+	    
+	    //Default Value With orElseGet
 	    String nullName = null;
-	    String name = Optional.ofNullable(nullName).orElse("john");
-	    assertEquals("john", name);
+	    String orElse = Optional.ofNullable(nullName).orElse("john");
+	    System.out.println(orElse);
 	    
+	    
+	    Optional<String> nullableOptional = Optional.ofNullable("hello");
+	    System.out.println(nullableOptional.get());
+	    
+	    
+	    //Default Value With orElseGet
+	    //Default Value With orElseGet
+	    String orElseGet = Optional.ofNullable(nullName).orElseGet(() -> "john");
+	    System.out.println(orElseGet);
+	    
+	  
 		
 	}
 

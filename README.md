@@ -36,4 +36,10 @@
    lazyness
    
    
+* Optional in java
+   http://www.baeldung.com/java-optional
+   
+
+   
+   
    
