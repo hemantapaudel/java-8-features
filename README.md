@@ -22,18 +22,18 @@
 
 * Stream
   https://github.com/hemantapaudel/java-8-features/tree/master/src/com/part4
-   sequencial vs parallel
-   type of operation (intermediate , terminate )
-   reduction
-   collectors
-   filters
-   sort 
-   limit
-   reverse
-   Comparator ==>> Comparator.comparing(p -> p.getFirstName())
-   map
-   flatmap
-   lazyness
+   sequencial vs parallel,
+   type of operation (intermediate , terminate ),
+   reduction,
+   collectors,
+   filters,
+   sort ,
+   limit,
+   reverse,
+   Comparator comparator ==>> Comparator.comparing(p -> p.getFirstName());
+   map,
+   flatmap,
+   lazyness of stream
    
    
 * Optional in java
