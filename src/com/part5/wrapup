@@ -1,0 +1,53 @@
+
+1. Readable and low line of code(remove boilerplate  code)
+
+Runnable example:
+
+
+2. Lambda are type inference
+
+
+3. functional interface(default method)
+
+
+4. Streams : pipeline of operation
+				source
+				intermediate operation
+				terminate operation
+				
+5. Steam : it is lezy always
+           The pipeline operation are only evaluated when terminal operation is called
+           
+           * Operation can operate sequentially or parallel
+           *Intermediate operation can be merge
+           *Steams characteristics help identify the optimization (distinct)
+           
+           
+           
+6. Lambda expression and Delayed Execution
+
+		log.debug(getSomeDate());
+		
+		
+		log.debug(()->getSomeDate());
+		
+		
+
+		
+7. Avoid loops in Streams
+       * function should not be change any state
+		 LongAdder longAdder = new LongAdder();
+		
+		Arrays.stream(arr)
+		.forEach(element -> longAdder.add(element));
+		
+		
+
+
+8. Art of Reduction:
+		
+		
+		
+
+
+           
